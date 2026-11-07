@@ -1,0 +1,22 @@
+{
+  "name": "roystore",
+  "version": "2.0.0",
+  "private": true,
+  "description": "ROYSTORE: Next.js store with Paystack checkout, built for Vercel",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test tests/pricing.test.js tests/store.test.js tests/paystack.test.js"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.34.0",
+    "next": "^16.4.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
